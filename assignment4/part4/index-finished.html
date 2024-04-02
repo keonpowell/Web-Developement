@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bouncing balls</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>bouncing balls</h1>
+    <p id="ballCount">Ball Count: </p>
+    <canvas></canvas>
+
+    <script src="main-finished.js"></script>
+    <script>
+      // Get a reference to the paragraph element
+      const ballCountElement = document.getElementById('ballCount');
+
+      // Function to update ball count display
+      function updateBallCount(count) {
+        ballCountElement.textContent = 'Ball Count: ' + count;
+      }
+      
+      // Call updateBallCount initially to display initial count
+      updateBallCount(25); 
+    </script>
+  </body>
+</html>
+
+<!-- I tried everything and couldnt get the evil circle to appear and couldnt so I just settled for the ball count 
+ -->
